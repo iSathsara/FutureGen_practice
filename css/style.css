@@ -1343,10 +1343,11 @@
 }
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
  .header {
-     background: #1F1F1F;
+     background: #0c0c0c;
      padding: 23px 0px;
      border-top: #cf2323 solid 5px;
      border-bottom: #cf2323 solid 5px;
+     
 }
  .logo a {
      font-size: 40px;
@@ -1562,7 +1563,7 @@
  .Lastestnews .news-box p{
      color: #7b7a7a;
      font-size:16px;
-     line-height: 23px;
+     line-height: 25px;
      padding: 7px 20px 20px 20px;
 }
 /** Lastestnews **/
