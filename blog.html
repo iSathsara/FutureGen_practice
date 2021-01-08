@@ -215,19 +215,19 @@
                             <form>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Name" type="text" name="Name">
+                                        <input class="contactus" placeholder="Name" type="text" id="name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" name="Email">
+                                        <input class="contactus" placeholder="Email" type="text" id="email">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="text" name="Email">
+                                        <input class="contactus" placeholder="Phone" type="text" id="phone">
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Message" type="text" id="msg"></textarea>
                                     </div>
                                     <div class="col-sm-12">
-                                        <button class="send">Send</button>
+                                        <Button class="send" onclick='sendMail()'>Send</Button>
                                     </div>
                                 </div>
                             </form>
@@ -271,6 +271,19 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <!-- import the js file -->
+    <script src="js/sendMail.js"></script>
+
+    <!-- email scripts -->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_wzZWqxemxVZu521sSNiK4");
+      })();
+    </script>
+    <!-- end of email scripts -->
+
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({

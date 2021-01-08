@@ -1,15 +1,17 @@
-function sendMail(params) {
+function sendMail() {
 
   var myParams = {
-    from_name:document.getElementById('name').value,
-    from_email:document.getElementById('email').value,
+    from_name:document.getElementById('from_name').value,
+    from_email:document.getElementById('from_email').value,
     message:document.getElementById('message').value,
-    contact_number:document.getElementById('contact').value
+    contact_number:document.getElementById('contact_number').value
   };
 
-  emailjs.send('service_m9y0acl','template_udsncry', myParams)
-  .then(function(res){
-    console.log("successful", res.status);
+  emailjs.sendForm('service_m9y0acl','template_udsncry', myParams)
+  .then(function(response){
+    console.log("successful", response.status);
+  }, function(error){
+    console.log("failed",error)
   });
 
 }

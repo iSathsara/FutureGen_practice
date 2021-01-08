@@ -1493,15 +1493,15 @@
      margin-left: 250px;
 }
  .text-box .box h3 {
-     font-size:55px;
+     margin-bottom: 20px;
      line-height: 60px;
-     text-transform: uppercase;
+     text-transform: full-width;
      padding: 12px 0px;
 }
  .text-box .box p {
      /*color: #fff;*/
-     font-size: 20px;
-     line-height: 22px;
+     font-size: 17px;
+     line-height: 35px;
 }
  .text-box .box a {
      max-width: 167px;

@@ -85,19 +85,39 @@
     </header>
     <!-- end header -->
 
-    <div class="aboutbg">
+    <div class="contactbg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="abouttitlepage">
-                        <h2>about me</h2>
+                    <div class="contacttitlepage">
+                        <h2>Who am I</h2>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-    <h2> content not developed yet </h2>
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
+              <div class="img-box">
+                  <figure><img src="images/cameraman.jpg" alt="img" /></figure>
+              </div>
+          </div>
+          <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
+              <div class="text-box">
+                  <div class="box">
+                      <h3>My name is<br> Isuru Sathsara. <br>Professional Photographer. <br>Blogger. <br>Tech Enthusiast</h3>
+                      <p>After graduated from the college I started my career as a software developer. I worked in IT industry more than 7 years.<br>
+                         I spent my free time by capturing images and editing.. eventually my hobby dragged out me from my career and made me a professional photographer.<br>
+                       </p><br><br>
+                      <p> My new career as a photographer is more than 4 years upto now. During this 4 years, I have covered more than 100 weddings and I always serve my customers in my best.</p>   
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
     <!-- music-box  -->
     <!--
     <div class="music-box about">
@@ -189,19 +209,19 @@
                             <form>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Name" type="text" name="Name">
+                                        <input class="contactus" placeholder="Name" type="text" id="name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" name="Email">
+                                        <input class="contactus" placeholder="Email" type="text" id="email">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="text" name="Email">
+                                        <input class="contactus" placeholder="Phone" type="text" id="phone">
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Message" type="text" id="msg"></textarea>
                                     </div>
                                     <div class="col-sm-12">
-                                        <button class="send">Send</button>
+                                        <Button class="send" onclick='sendMail()'>Send</Button>
                                     </div>
                                 </div>
                             </form>
@@ -245,6 +265,19 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <!-- import the js file -->
+    <script src="js/sendMail.js"></script>
+
+    <!-- email scripts -->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_wzZWqxemxVZu521sSNiK4");
+      })();
+    </script>
+    <!-- end of email scripts -->
+
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({

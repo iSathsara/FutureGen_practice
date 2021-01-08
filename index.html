@@ -32,6 +32,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
+      <!-- import the js file -->
+      <script src="js/sendMail.js"></script>
+
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script type="text/javascript">
+          (function() {
+              emailjs.init('user_wzZWqxemxVZu521sSNiK4');
+            })();
+      </script>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="js/smtp.js"></script>
+
 
 </head>
 <!-- body -->
@@ -95,7 +109,7 @@
 
                 <div class="text-bg relative">
                     <h1><br><span class="Perfect">Moment Captures</span></h1><br>
-                    <p><span class="Perfect_para">Wedding day is the greatest day in your life. It's the beginning of a new journey. Let's fill that day<br>
+                    <p><span class="Perfect_para">The day of wedding is the greatest day in your life. It's the beginning of a new journey. Let's fill that day<br>
                         with gorgeus memories and keep them alive forever...<br></span> <span class="Perfect_para"> - Moment Captures - </span></p>
                     <a href="contact.html">Join with Me</a>
                 </div>
@@ -156,7 +170,7 @@
                         <h3>I am your photographer</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable
                             <br> content of a page when looking at its layout. The point of using Lorem </p>
-                        <a href="contact.html">More about me</a>
+                        <a href="about.html">More about me</a>
                     </div>
                 </div>
             </div>
@@ -301,22 +315,22 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 width">
                         <div class="address">
                             <h3>Get In Touch</h3>
-                            <form id="myForm" method="post">
+                            <form id="contact-form" method="post">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Name" type="text" id="name">
+                                        <input class="contactus" placeholder="Name" type="text" id="from_name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" id="phone">
+                                        <input class="contactus" placeholder="Email" type="text" id="from_email">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="text" id="email">
+                                        <input class="contactus" placeholder="Phone" type="text" id="contact_number">
                                     </div>
                                     <div class="col-sm-12">
                                         <textarea class="textarea" placeholder="Message" type="text" id="message"></textarea>
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="send" type="submit" onclick='sendMail()' value="Send"></input>
+                                        <input type="button" onclick="sendMail()" value="send"></input>
                                     </div>
                                 </div>
                             </form>
@@ -362,6 +376,8 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({
@@ -378,18 +394,6 @@
             });
         });
     </script>
-
-    <!-- import the js file -->
-    <script src="js/sendMail.js"></script>
-
-    <!-- email scripts -->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init("user_wzZWqxemxVZu521sSNiK4");
-      })();
-    </script>
-    <!-- end of email scripts -->
 
 </body>
 
