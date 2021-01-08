@@ -79,11 +79,7 @@
  button:focus {
      outline: none;
 }
- ul, li, ol {
-     margin: 0px;
-     padding: 0px;
-     list-style: none;
-}
+
  p {
      margin: 0px;
      font-weight: 300;
@@ -1347,7 +1343,7 @@
      padding: 23px 0px;
      border-top: #cf2323 solid 5px;
      border-bottom: #cf2323 solid 5px;
-     
+
 }
  .logo a {
      font-size: 40px;
@@ -1417,11 +1413,14 @@
      font-size: 70px;
      line-height: 90px;
      font-weight: bold;
+     font-family: Courier New, monospace;
 }
  .banner-main .text-bg p {
-     font-size: 17px;
+     font-size: 27px;
      padding: 0px 0px 40px 0px;
      color: #fff;
+     font-family: Apple Chancery,cursive;
+     line-height: 50px;
 }
  .banner-main .text-bg a {
      border: #fff solid 1px;
@@ -1526,6 +1525,7 @@
  .Lastestnews .titlepage {
      text-align: center;
      margin-bottom: 60px;
+     font-style: oblique;
 }
  .Lastestnews .titlepage h2 {
      font-size: 60px;
@@ -1558,7 +1558,8 @@
 }
  .Lastestnews .news-box span {
      color: #e61414;
-     margin-left: 20px;
+     margin: 20px;
+
 }
  .Lastestnews .news-box p{
      color: #7b7a7a;
@@ -1574,6 +1575,7 @@
  .Albums .titlepage {
      text-align: center;
      margin-bottom: 60px;
+     font-style: oblique;
 }
  .Albums .titlepage h2 {
      font-size: 60px;
@@ -1823,7 +1825,7 @@
      margin-top: 90px;
 }
  .aboutbg {
-     background-color: #ff1d00;
+     background-color: #a6a6a68c;
 }
  .contact-page .send {
     background: #000;
@@ -1849,7 +1851,7 @@
     color: #f70e0e;
 }
  .aboutbg .abouttitlepage h2 {
-     color: #fff;
+     color: #000000;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;
@@ -1858,11 +1860,11 @@
      text-align: center;
 }
  .contactbg {
-     background-color: #ff1d00;
+     background-color: #a6a6a68c;
      margin-bottom: 90px;
 }
  .contactbg .contacttitlepage h2 {
-     color: #fff;
+     color: #000000;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;
@@ -1871,10 +1873,10 @@
      text-align: center;
 }
  .blogbg {
-     background-color: #ff1d00;
+     background-color: #a6a6a68c;
 }
  .blogbg .blogtitlepage h2 {
-     color: #fff;
+     color: #000000;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;
@@ -1883,11 +1885,11 @@
      text-align: center;
 }
  .Albumsbg {
-     background-color: #ff1d00;
+     background-color: #a6a6a68c;
      margin-bottom: 60px;
 }
  .Albumsbg .Albumstitlepage h2 {
-     color: #fff;
+     color: #000000;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;

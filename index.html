@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +31,8 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
 </head>
 <!-- body -->
 
@@ -91,8 +95,8 @@
 
                 <div class="text-bg relative">
                     <h1><br><span class="Perfect">Moment Captures</span></h1><br>
-                    <p><span class="Perfect_para">Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis lacinia nec et est
-                        <br> aptent taciti sociosqu ad litora torquent per conubia nostra</span></p>
+                    <p><span class="Perfect_para">Wedding day is the greatest day in your life. It's the beginning of a new journey. Let's fill that day<br>
+                        with gorgeus memories and keep them alive forever...<br></span> <span class="Perfect_para"> - Moment Captures - </span></p>
                     <a href="contact.html">Join with Me</a>
                 </div>
 
@@ -158,6 +162,7 @@
             </div>
         </div>
     </div>
+    <hr>
 
     <!-- Download -->
     <div id="screenshot" class="Lastestnews">
@@ -166,7 +171,7 @@
                 <div class="col-md-12">
                     <div class="titlepage">
                         <h2>Recent Events</h2>
-                        <span>It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout. The point of using Lorem </span>
+                        <span>Most recent wedding events captured by me</span>
                     </div>
                 </div>
             </div>
@@ -292,30 +297,32 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-lg-6 col-md-6 col-sm-12 width">
                         <div class="address">
                             <h3>Get In Touch</h3>
-                            <form>
+                            <form id="myForm" method="post">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Name" type="text" name="Name">
+                                        <input class="contactus" placeholder="Name" type="text" id="name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" name="Email">
+                                        <input class="contactus" placeholder="Phone" type="text" id="phone">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="text" name="Email">
+                                        <input class="contactus" placeholder="Email" type="text" id="email">
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Message" type="text" id="message"></textarea>
                                     </div>
                                     <div class="col-sm-12">
-                                        <button class="send">Send</button>
+                                        <input class="send" type="submit" onclick='sendMail()' value="Send"></input>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
+
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 width">
                         <div class="address">
                             <!-- <h3>New Music </h3> -->
@@ -339,11 +346,12 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>© 2011 All Rights Reserved. <a href="#">www.momentcapture.com</a></p>
+                <p>© 2021 All Rights Reserved. <a href="#">www.momentcapture.com</a></p>
             </div>
         </div>
     </footr>
     <!-- end footer -->
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -370,6 +378,19 @@
             });
         });
     </script>
+
+    <!-- import the js file -->
+    <script src="js/sendMail.js"></script>
+
+    <!-- email scripts -->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_wzZWqxemxVZu521sSNiK4");
+      })();
+    </script>
+    <!-- end of email scripts -->
+
 </body>
 
 </html>
